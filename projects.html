@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — I Wayan Aldy Nuada Juliantara</title>
+    <meta name="description" content="Fullstack Web Developer yang membangun aplikasi Laravel dari desain di Figma hingga live di server. Berpengalaman mengerjakan e-commerce, sistem manajemen, hingga panel admin dan API.">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Set the theme before first paint to avoid a light/dark flash. -->
+    <script>
+        (function () {
+            var theme = null;
+            try { theme = localStorage.getItem('theme'); } catch (e) {}
+            var dark = theme ? theme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.classList.toggle('dark', dark);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="projects">
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <div data-component="hero"></div>
+                <div data-component="navbar"></div>
+                <div data-page-content>
+                    <div data-component="project-list"></div>
+                </div>
+            </div>
+        </div>
+
+        <div data-component="contact"></div>
+    </main>
+
+    <div data-component="footer"></div>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
